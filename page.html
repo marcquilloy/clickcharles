@@ -8,10 +8,14 @@
 <body>
     <img src="charls.jpg" alt="Description of the image">
     
-    <audio autoplay src="shutter.mp3"></audio>
+    <audio id="song">
+        <source src="shutter.mp3">
+    </audio>
 
     <script>
-        audioElement.play();
+        window.addEventListener('click', () => {
+            document.getElementById("song").play();
+        });
     </script>
 </body>
 
