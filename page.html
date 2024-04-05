@@ -13,8 +13,9 @@
     </audio>
 
     <script>
-        window.addEventListener('click', () => {
-            document.getElementById("song").play();
+        document.addEventListener('DOMContentLoaded', function () {
+            var audioElement = document.getElementById('song');
+            audioElement.play();
         });
     </script>
 </body>
